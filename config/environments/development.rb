@@ -8,14 +8,8 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-  # config.action_mailer.delivery_method = :test
-  # config.action_mailer.default_url_options = { :host => 'http://localhost:3000' }
-
-  ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-    :address => "localhost",
-    :port => 1025,
-    :domain => "everydayrails.com" }
+  config.action_mailer.delivery_method = :test
+  config.action_mailer.default_url_options = { :host => 'http://localhost:3000' }
 
   # Show full error reports.
   config.consider_all_requests_local = true
