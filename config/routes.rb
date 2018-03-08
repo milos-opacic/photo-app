@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => 'registrations' }
   root 'welcome#index'
   default_url_options :host => "http://localhost:3000"
 
